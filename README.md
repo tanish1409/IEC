@@ -1,4 +1,4 @@
-# 🎯 Mastermind Game
+# Mastermind Game
 
 <div align="center">
 
@@ -16,11 +16,11 @@
 
 ---
 
-## 📖 Overview
+## Overview
 
 Mastermind is an enhanced web-based implementation of the classic code-breaking board game. Challenge yourself against the computer or compete with friends in this beautifully designed puzzle game featuring dynamic difficulty levels, multiple game modes, and an elegant dark-themed interface.
 
-### 🎮 What's Mastermind?
+### What's Mastermind?
 
 In Mastermind, one player (the "codemaker") creates a secret pattern of colored pegs, while the other player (the "codebreaker") attempts to guess the pattern within a limited number of attempts. After each guess, feedback is provided using black and white pegs:
 
@@ -31,9 +31,9 @@ The challenge lies in using logical deduction to crack the code before running o
 
 ---
 
-## ✨ Features
+## Features
 
-### 🎲 Dual Game Modes
+### Dual Game Modes
 
 #### Classic Mode (1-Player)
 - Face off against an AI codemaker
@@ -47,7 +47,7 @@ The challenge lies in using logical deduction to crack the code before running o
 - Visual handover screens prevent cheating
 - Individual score tracking for competitive play
 
-### ⚙️ Customizable Gameplay
+### Customizable Gameplay
 
 | Feature | Options | Description |
 |---------|---------|-------------|
@@ -56,14 +56,14 @@ The challenge lies in using logical deduction to crack the code before running o
 | **Attempts** | 10 per round | Standard across all modes |
 | **Colors** | 12 unique | Visually distinct palette |
 
-### 🎨 Difficulty System
+### Difficulty System
 
 - **Normal Mode**: Available colors = Peg count + 2
   - Example: 4 pegs → 6 colors to choose from
 - **Hard Mode**: Available colors = Peg count + 4
   - Example: 4 pegs → 8 colors to choose from
 
-### 🏆 Scoring System
+### Scoring System
 
 **Classic Mode:**
 ```
@@ -77,7 +77,7 @@ Guesser wins: Points = 10 - attempts_used + 1
 Mastermind wins: Points = 10 (if guesser fails)
 ```
 
-### 💎 User Experience
+### User Experience
 
 - **Modern UI/UX**: Sleek dark theme with gradient accents
 - **Responsive Design**: Works seamlessly on desktop and mobile
@@ -88,7 +88,7 @@ Mastermind wins: Points = 10 (if guesser fails)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -140,7 +140,7 @@ Open your browser to: `http://localhost:5500`
 
 ---
 
-## 🎯 Game Rules
+## Game Rules
 
 ### Setup Phase
 
@@ -183,7 +183,7 @@ After each guess, you'll receive feedback:
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Technology Stack
 
@@ -247,7 +247,7 @@ IEC/
 
 ---
 
-## 🎨 Design Philosophy
+## Design Philosophy
 
 ### Color Palette
 
@@ -274,7 +274,7 @@ The game features 12 carefully selected, visually distinct colors:
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 ### Configuration Options
 
@@ -354,59 +354,7 @@ def score_guess(guess, secret):
 
 ---
 
-## 🐛 Troubleshooting
-
-### Common Issues
-
-#### "Cannot connect to server"
-
-**Problem**: Frontend can't reach backend API
-
-**Solution**:
-```bash
-# Check if backend is running
-curl http://localhost:1000/api/state
-
-# Restart backend
-cd backend
-python app.py
-```
-
-#### "CORS Policy Error"
-
-**Problem**: Opening HTML file directly (file://)
-
-**Solution**: Always serve frontend through HTTP server:
-```bash
-cd frontend
-python -m http.server 5500
-```
-
-#### "Module not found" errors
-
-**Problem**: Missing Python dependencies
-
-**Solution**:
-```bash
-cd backend
-pip install -r requirements.txt
-```
-
-#### Colors not clickable
-
-**Problem**: Color might already be selected
-
-**Solution**: Click the filled peg in the guess row to deselect it
-
-#### Game won't start
-
-**Problem**: Player names not entered (Two-Player mode)
-
-**Solution**: Ensure both player names are filled in
-
----
-
-## 🔧 Development
+## Development
 
 ### Running in Development Mode
 
@@ -436,7 +384,7 @@ python app.py
 
 ---
 
-## 👥 Authors
+## Authors
 
 - **Tanish** - [@tanish1409](https://github.com/tanish1409) - *Repository Owner*
 - **Kunal** - *Collaborator & Implementation*
