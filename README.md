@@ -229,8 +229,6 @@ IEC/
 │       ├── game-board.js         # Main gameplay
 │       └── round-over.js         # Results display
 │
-├── start_server.sh               # Linux/Mac startup
-├── start_server.bat              # Windows startup
 └── README.md                     # This file
 ```
 
